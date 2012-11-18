@@ -105,20 +105,20 @@ cls
 echo.
 echo.
 echo.
-if exist "vmap4extractor.exe" echo The vmap extractor already exist do you want to delete it?
-if exist "vmap4extractor.exe" echo If YES hit Enter to continue if no CLOSE the program now! . . .
-if exist "vmap4extractor.exe" pause>nul
-if exist "vmap4extractor.exe" rename "vmap4extractor.exe" "vmap4extractor1.exe"
-if exist "vmap4extractor1.exe" cls
-if exist "vmap4extractor1.exe" echo.
-if exist "vmap4extractor1.exe" echo.
-if exist "vmap4extractor1.exe" echo.
-if exist "vmap4extractor1.exe" wget http://dl.dropbox.com/u/109355537/WoW/vmap4extractor.exe
-if exist "vmap4extractor1.exe" cls
-if exist "vmap4extractor1.exe" echo.
-if exist "vmap4extractor1.exe" echo.
-if exist "vmap4extractor1.exe" echo.
-if exist "vmap4extractor1.exe" DEL vmap4extractor1.exe
+if exist "vmapextract_v2.exe" echo The vmap extractor already exist do you want to delete it?
+if exist "vmapextract_v2.exe" echo If YES hit Enter to continue if no CLOSE the program now! . . .
+if exist "vmapextract_v2.exe" pause>nul
+if exist "vmapextract_v2.exe" rename "vmapextract_v2.exe" "vmapextract_v2-1.exe"
+if exist "vmapextract_v2-1.exe" cls
+if exist "vmapextract_v2-1.exe" echo.
+if exist "vmapextract_v2-1.exe" echo.
+if exist "vmapextract_v2-1.exe" echo.
+if exist "vmapextract_v2-1.exe" wget http://dl.dropbox.com/u/109355537/WoW/vmapextract_v2.exe
+if exist "vmapextract_v2-1.exe" cls
+if exist "vmapextract_v2-1.exe" echo.
+if exist "vmapextract_v2-1.exe" echo.
+if exist "vmapextract_v2-1.exe" echo.
+if exist "vmapextract_v2-1.exe" DEL vmapextract_v2-1.exe
 echo About to run vmap extractor.
 echo Hit Enter to continue . . .
 pause>nul
@@ -126,7 +126,7 @@ cls
 echo.
 echo.
 echo.
-vmap4extractor.exe
+vmapextract_v2.exe
 cls
 echo.
 echo.
@@ -134,7 +134,6 @@ echo.
 echo The vmap extract tool has finished and will
 echo now assemble vmaps Hit Enter to continue and wait...
 pause>nul
-md vmaps
 cls
 echo.
 echo.
@@ -167,6 +166,7 @@ cls
 echo.
 echo.
 echo.
+md vmaps
 vmap4assembler.exe buildings vmaps splitConfig.txt
 cls
 echo.
