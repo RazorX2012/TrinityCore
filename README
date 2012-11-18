@@ -1,0 +1,8 @@
+maps, buildings and vmaps Extractor
+ and Assembler For 2.4.3
+Created By RazorX
+
+
+Simply place the "Extract Map Files.bat" into your World of Warcraft 
+root folder along with the "wget.exe" and run the "Extract Map Files.bat" 
+file and follow the onscreen instructions.
